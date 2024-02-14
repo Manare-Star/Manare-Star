@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sidebar{
+    overflow: hidden;
+    height: 100vh;
+}
+.categories{
+    display: flex;
+    cursor: pointer;
+}
+.categories:hover{
+    background-color: lightgray;
+}
+.profile-actions{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+}
