@@ -3,20 +3,142 @@
     padding: 0;
     box-sizing: border-box;
 }
-.sidebar{
-    overflow: hidden;
+body{
+    display: flex;
     height: 100vh;
+    max-width: 1300px;
+    padding-left: 0 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.sidebar{
+    border-right: 1px solid #e1e3e1;
+    flex: 0.2;
+    min-width: 220px;
+    overflow-y: hidden;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+img
+{
+    padding-left: 15px;
+    width: 55px;
+
+}
+.sidebar .categories .material-icons{
+    color: #1c1c1c;
+    margin-right: 20px;
+    font-size: 36px;
+}
+
+
 .categories{
     display: flex;
     cursor: pointer;
+    align-items: center;
+    padding: 10px;
 }
 .categories:hover{
     background-color: lightgray;
+    /* border-bottom-left-radius: 9999px;
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px; */
+    border-radius: 30px;
+}
+.categories.active{
+    color: #1c1c1c;
+}
+.categories h2{
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.post-button{
+    width:100%;
+    background-color: rgb(29, 115, 240);
+    border-radius: 30px;
+    padding: 15px;
+    border: none;
+    color:white ;
+    font-size: 20px;
+    font-weight: 900px;
+    height: 50px;
+    
 }
 .profile-actions{
     display: flex;
-    flex-direction: row;
-    position: absolute;
-    bottom: 0;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 300;
+    height: 60px;
+}
+.profile-actions:hover{
+    width: 100%;
+    background-color: lightgray;
+    border-radius: 30px;
+    
+}
+.profile-name{
+    display: flex;
+    flex-direction: column;
+}
+.profile-actions .profile-pic img{
+    margin-top: 5px;
+   border-radius: 50%;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-bar{
+  
+    width: 500px;
+
+}
+.nav-sections{
+   
+    align-items: center;
+    width: 250px;
+}
+.post-tweet{
+    flex: 0.5;
+    border-right: 1px solid  #e1e3e1;
+    min-width: fit-content;
+    overflow-y: scroll;
+
+}
+.post-tweet::-webkit-scrollbar{
+    display: none;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #e1e3e1;
+    font-size: 17px;
+    font-weight: 900;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+
+.header .heading-1
+{
+    padding: 20px 130px 20px 120px;
+    
+}.header .heading-2
+{
+    padding: 20px 120px 20px 130px;
+    
+}
+.tweet-container img{
+    
+    border-radius: 50%;
+   height: 40px;
 }
