@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
+    font-family: "Roboto" ,Arial, Helvetica, sans-serif;
     display: flex;
     height: 100vh;
     max-width: 1300px;
@@ -19,9 +21,9 @@ body{
     overflow-y: hidden;
     margin-top: 20px;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 200px;
 }
-img
+.sidebar img
 {
     padding-left: 15px;
     width: 55px;
@@ -47,6 +49,7 @@ img
     border-top-right-radius: 9999px;
     border-bottom-right-radius: 9999px; */
     border-radius: 30px;
+    width: 200px;
 }
 .categories.active{
     color: #1c1c1c;
@@ -57,7 +60,7 @@ img
     margin-right: 20px;
 }
 .post-button{
-    width:100%;
+    width:200px;
     background-color: rgb(29, 115, 240);
     border-radius: 30px;
     padding: 15px;
@@ -125,20 +128,187 @@ img
     position: sticky;
     top: 0;
     z-index: 100;
+    height: 50px;
 
 }
 
 .header .heading-1
 {
-    padding: 20px 130px 20px 120px;
-    
-}.header .heading-2
+    padding: 10px 130px 10px 120px;
+    cursor: pointer;   
+}
+.header .heading-2
 {
-    padding: 20px 120px 20px 130px;
-    
+    padding: 10px 120px 10px 130px;
+    cursor: pointer;
+}
+.heading-1:hover{
+    background-color: lightgray;
+}
+.heading-2:hover{
+    background-color: lightgray;
+}
+.header .material-icons{
+    padding: 10px 20px 10px 20px;
+}
+.header .material-icons:hover{
+    background-color: lightgray;
 }
 .tweet-container img{
     
     border-radius: 50%;
-   height: 40px;
+    width: 36px;
+    height: 36px;
+}
+.tweet-container{
+    padding:0 0 20px 0;
+    border-bottom: 1px solid #e1e3e1;
+
+}
+.tweet-container form{
+    display: flex;
+    flex-direction: column;
+}
+.tweet-input{
+    display: flex;
+    padding: 20px;
+}
+.tweet-input input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    font-size: 20px;
+    border-bottom: 1px solid #e1e3e1;
+    padding-bottom: 40px;
+}
+.tweet-button{
+    background-color: rgb(103, 194, 255);
+    color: white;
+    border: none;
+    font-weight: 900;
+    border-radius: 30px;
+    width: 80px;
+    height: 40px;
+   
+    margin-left: auto;
+}
+.tweet-container .icons{
+    color: rgb(29, 115, 240);
+    padding: 0 10px 0 10px;
+    display: flex;
+    cursor: pointer;
+   
+}
+
+.tweet-container .material-icons{
+    
+    padding: 8px 6px;
+    font-size: 20px;
+
+}
+.tweet-container .material-icons:hover{
+    background-color: lightgray;
+    border-radius: 30px;
+    
+}
+.profile-info{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    width: 620px;
+}
+.profile{
+    padding-right: 3px;
+}
+.post-image img{
+    width: 450px;
+    border-radius: 20px;
+}
+.post-image{
+    flex: 0.8;
+    padding: 10px 0 10px 7px;
+
+}
+.tweet-section{
+    display: flex;
+    padding: 12px 0 12px 16px;
+    border-bottom: 1px solid #e1e3e1;
+}
+.tweet-section .profile img{
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+}
+
+.caption 
+{
+    padding: 6px 2px;
+    font-size: 15px;
+    font-weight: 400;
+    color-scheme: light;
+}
+.username{
+    padding-left: 5px;
+    /* margin-top: 2px; */
+    font-size: 15px;
+    font-weight: 400;
+    color: #7b8892;
+}
+.profile-info .profile-name{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    padding-left: 2px;
+    font-size: 17px;
+    font-weight: 500;
+
+}
+.profile-name .material-icons{
+    font-size: 14px;
+    color: rgb(29, 115, 240);
+    margin-right: 5px;
+    padding-top: 5px;
+}
+
+.inter-section{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.relevant-people
+{
+    border: 1px solid #e1e3e1;
+    margin: 20px;
+    padding: 20px;
+}
+.relevant-people .header{
+    padding: 12px 16px;
+    border: none;
+}
+.rel-img img{
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+}
+.people-profile
+{
+    display: flex;
+    padding: 12px 16px;
+}
+.their-info
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+}
+.their-info .material-icons{
+    font-size: 14px;
+    color: rgb(29, 115, 240);
+    margin-right: 5px;
+    padding-top: 5px;
+}
+.their-info .username{
+    padding-left: 0px;
 }
